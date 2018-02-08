@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Quick and Easy CBSA</title>
+        <title>CBSA Tool</title>
         <meta charset="utf-8">
-            <title>CBSA</title>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>         
+        <link rel="stylesheet" href="styles.css" title="External Style Sheet">
     </head>
-        </script>
-            <body>
-            <h1>CBSA</h1>
-            <textarea id="output"></textarea><br />
-            <button>Copy CBSA Value(s)</button>
-            <h2>Maintain</h2>
+    <body>
+        <center>
+        <textarea id="output"></textarea><br />
+        <button>Copy CBSA Value(s)</button>
+    </center>
+    <div class="row">
+        <div class="column">
+                <h2>Maintain</h2>
                 <p>
-                    <label><input type="checkbox" class="mSelectAll" name="master" />Maintain All</label>
+                    <label><input type="checkbox" class="mSelectAll" name="master" />Maintain All</label><br /><br />
 
-                <div id="maintainList">
                     <label><input type="checkbox" class="mChild" name="cbsaChild" value="Albany" />Albany-Schenectady-Troy, NY</label><br />
                     <label><input type="checkbox" class="mChild" name="cbsaChild" value="Baltimore" />Baltimore-Columbia-Towson, MD</label><br />
                     <label><input type="checkbox" class="mChild" name="cbsaChild" value="Boston" />Boston-Cambridge-Newton, MA-MH</label><br />
@@ -35,215 +37,217 @@
                     <label><input type="checkbox" class="mChild" name="cbsaChild" value="Providence" />Providence-Warwick, RI-MA</label><br />
                     <label><input type="checkbox" class="mChild" name="cbsaChild" value="Allentown" />Allentown-Bethlehem-Easton, PA-NJ</label><br />
                     <label><input type="checkbox" class="mChild" name="cbsaChild" value="Trenton" />Trenton, NJ</label><br />
-                </div>
                 </p>
+        </div>
+        <div class="column">
             <h2>Recapture</h2>
-                <p>
-                    <label><input type="checkbox" name="master" class="rSelectAll" />Recapture All</label>
-                    
-                <div id="recaptureList">
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Atlanta" />Atlanta-Sandy Springs-Roswell, GA</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Austin" />Austin-Round Rock, TX</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Dallas" />Dallas-Fort Worth-Arlington, TX</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Houston" />Houston-The Woodlands-Sugar Land, TX</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Las Vegas" />Las Vegas-Henderson-Paradise, NV</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Los Angeles" />Los Angeles-Long Beach-Anaheim, CA</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Miami" />Miami-Fort Lauderdale-West Palm Beach, FL</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Minneapolis" />Minneapolis-St. Paul-Bloomington, MN-WI</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Nashville" />Nashville-Davidson-Murfreesboro-Franklin, TN</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Phoenix" />Phoenix-Mesa-Scottsdale, AZ</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Portland" />Portland-Vancouver-Hillsboro, OR-WA</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="San Diego" />San Diego-Carlsbad, CA</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="San Francisco" />San Francisco-Oakland-Hayward, CA</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="San Jose" />San Jose-Sunnyvale-Santa Clara, CA</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Seattle" />Seattle-Tacoma-Bellevue, WA</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="St. Louis" />St. Louis, MO-IL</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Sacramento" />Sacramento-Roseville-Arden-Arcade, CA</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Tampa" />Tampa-St. Petersburg-Clearwater, FL</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="Orlando" />Orlando-Kissimmee-Sanford, FL</label><br />
-                    <label><input type="checkbox" class="rChild" name="cbsaChild" value="New Orleans" />New Orleans-Metairie, LA</label><br />
-                </div>
-                </p>
+            <p>
+                <label><input type="checkbox" name="master" class="rSelectAll" />Recapture All</label><br /><br />
+                
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Atlanta" />Atlanta-Sandy Springs-Roswell, GA</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Austin" />Austin-Round Rock, TX</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Dallas" />Dallas-Fort Worth-Arlington, TX</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Houston" />Houston-The Woodlands-Sugar Land, TX</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Las Vegas" />Las Vegas-Henderson-Paradise, NV</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Los Angeles" />Los Angeles-Long Beach-Anaheim, CA</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Miami" />Miami-Fort Lauderdale-West Palm Beach, FL</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Minneapolis" />Minneapolis-St. Paul-Bloomington, MN-WI</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Nashville" />Nashville-Davidson-Murfreesboro-Franklin, TN</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Phoenix" />Phoenix-Mesa-Scottsdale, AZ</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Portland" />Portland-Vancouver-Hillsboro, OR-WA</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="San Diego" />San Diego-Carlsbad, CA</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="San Francisco" />San Francisco-Oakland-Hayward, CA</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="San Jose" />San Jose-Sunnyvale-Santa Clara, CA</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Seattle" />Seattle-Tacoma-Bellevue, WA</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="St. Louis" />St. Louis, MO-IL</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Sacramento" />Sacramento-Roseville-Arden-Arcade, CA</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Tampa" />Tampa-St. Petersburg-Clearwater, FL</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="Orlando" />Orlando-Kissimmee-Sanford, FL</label><br />
+                <label><input type="checkbox" class="rChild" name="cbsaChild" value="New Orleans" />New Orleans-Metairie, LA</label><br />
+            </p>
+        </div>
+        <div class="column">
             <h2>Priority Establish</h2>
-                <p>
-                    <label><input type="checkbox" name="master" class="pSelectAll" />Maintain All</label>
+            <p>
+                <label><input type="checkbox" name="master" class="pSelectAll" />Maintain All</label><br /><br />
 
-                <div id="pEstablishList">
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Albuquerque" />Albuquerque, NM</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Buffalo" />Buffalo-Cheektowaga-Niagara Falls, NY</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Charlotte" />Charlotte-Concord-Gastonia, NC-SC</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Cincinnati" />Cincinnati, OH-KY-IN</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Cleveland" />Cleveland-Elyria, OH</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Columbus" />Columbus, OH</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Durham" />Durham-Chapel Hill, NC</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Indianapolis" />Indianapolis-Carmel-Anderson, IN</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Jacksonville" />Jacksonville, FL</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Kansas City" />Kansas City, MO-KS</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Milwaukee" />Milwaukee-Waukesha-West Allis, WI</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="New Haven" />New Haven-Milford, CT</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Raleigh" />Raleigh, NC</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Richmond" />Richmond, VA</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Riverside" />Riverside-San Bernardino-Ontario, CA</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="San Antonio" />San Antonio-New Braunsfels, TX</label><br />
-                    <label><input type="checkbox" class="pChild" name="cbsaChild" value="Virginia Beach" />Virginia BEach-Norfolk-Newport News, VA-NC</label><br />
-                </div>
-                </p>
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Albuquerque" />Albuquerque, NM</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Buffalo" />Buffalo-Cheektowaga-Niagara Falls, NY</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Charlotte" />Charlotte-Concord-Gastonia, NC-SC</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Cincinnati" />Cincinnati, OH-KY-IN</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Cleveland" />Cleveland-Elyria, OH</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Columbus" />Columbus, OH</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Durham" />Durham-Chapel Hill, NC</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Indianapolis" />Indianapolis-Carmel-Anderson, IN</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Jacksonville" />Jacksonville, FL</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Kansas City" />Kansas City, MO-KS</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Milwaukee" />Milwaukee-Waukesha-West Allis, WI</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="New Haven" />New Haven-Milford, CT</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Raleigh" />Raleigh, NC</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Richmond" />Richmond, VA</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Riverside" />Riverside-San Bernardino-Ontario, CA</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="San Antonio" />San Antonio-New Braunsfels, TX</label><br />
+                <label><input type="checkbox" class="pChild" name="cbsaChild" value="Virginia Beach" />Virginia BEach-Norfolk-Newport News, VA-NC</label><br />
+            </p>
+        </div>
+        <div class="column">
             <h2>Secondary Establish</h2>
-                <p>
-                    <label><input type="checkbox" name="master" class="sSelectAll" />Maintain All</label>
+            <p>
+                <label><input type="checkbox" name="master" class="sSelectAll" />Maintain All</label><br /><br />
 
-                <div id="sEstablishList">
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Akron" />Akron, OH</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Amsterdam" />Amsterdam, NY</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Anchorage" />Anchorage, AK</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Asheville" />Asheville, NC</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Atlantic City" />Atlantic City-Hammonton, NJ</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Batavia" />Batavia, NY</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Binghamton" />Binghamton, NY</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Birmingham" />Birmingham-Hoover, AL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Boise City" />Boise City, ID</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Burlington" />Burlington-South Burlington, VT</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Cape Coral" />Cape Coral-Fort Myers, FL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Mattoon" />Charleston-Mattoon, IL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="North Charleston" />Charleston-North Charleston, SC</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Chattanooga" />Chattanooga, TN-GA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Colorado Springs" />Colorado Springs, CO</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Concord" />Concord, NH</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Corpus Christi" />Corpus Christi, TX</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Cortland" />Cortland, NY</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Crestview" />Crestview-Fort Walton Beach-Destin, FL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Davenport" />Davenport-Moline-Rock Island, IA-IL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Deltona" />Deltona-Daytona Beach-Ormond Beach, FL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Des Moines" />Des Moines-West Des Moines, IA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Duluth" />Duluth, MN-WI</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Eau Claire" />Eau Claire, WI</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="El Paso" />El Paso, TX</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Elmira" />Elmira, NY</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Fargo" />Fargo, ND-MN</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Fayetteville" />Fayetteville, NC</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Flagstaff" />Flagstaff, AZ</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Fond du Lac" />Fond du Lac, WI</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Fort Collins" />Fort Collins, CO</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Fresno" />Fresno, CA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Gainesville" />Gainsville, GA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Glens Falls" />Glens Falls, NY</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Grand Rapids" />Grand Rapids-Wyoming, MI</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Greeley" />Greeley, CO</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Greenville" />Greenville-Anderson-Mauldin, SC</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Harrisburg" />Harrisburg-Carlisle, PA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Harrisonburg" />Harrisonburg, VA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Hudson" />Hudson, NY</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Huntsville" />Huntsville, AL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Indiana" />Indiana, PA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Jacksonville" />Jacksonville, NC</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Kankakee" />Kankakee, IL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Keene" />Keene, NH</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Killeen" />Killeen-Temple, TX</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lafayette" />Lafayette-West Lafayette, IN</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lakeland" />Lakeland-Winter Haven, FL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lancaster" />Lancaster, PA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lincoln" />Lincoln, NE</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Louisville" />Louisville-Jefferson County, KY-IN</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Manchester" />Manchester-Nashua, NH</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Modesto" />Modesto, CA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Montgomery" />Montgomery, AL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Myrtle Beach" />Myrtle Beach-Conway-North Myrtle Beach, SC-NC</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Napa" />Napa, CA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Naples" />Naples-Immokalee-Marco Island, FL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="North Port" />North Port-Sarasota-Bradenton, FL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Norwich" />Norwich-New London, CT</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Ocala" />Ocala, FL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Ocean City" />Ocean City, NJ</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Ogden" />Ogden-Clearfield, UT</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Oklahoma City" />Oklahoma City, OK</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Olympia" />Olympia-Tumwater, WA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Omaha" />Omaha-Council Bluffs, NE-IA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Oshkosh" />Oshkosh-Neenah, WI</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Oxnard" />Oxnard-Thousand Oaks-Ventura, CA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Palm Bay" />Palm Bay-Melbourne-Titusville, FL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Panama City" />Panama City, FL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Pensacola" />Pensacola-Ferry Pass-Brent, FL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Peoria" />Fayetteville, NC</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Port St. Lucie" />Peoria, IL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Portland" />Portland-South Portland, ME</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Reno" />Reno, NV</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Rochelle" />Rochelle, IL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Rockford" />Rockford, IL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Salisbury" />Salisbury, MD-DE</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Santa Cruz" />Santa Cruz-Watsonville, CA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Santa Rosa" />Santa Rosa, CA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Savannah" />Savannah, GA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Scranton" />Scranton-Wilkes-Barre-Hazleton, PA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Sheboygan" />Sheboygan, WI</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Sioux Falls" />Sioux Falls, SD</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Spartanburg" />Spartanburg, SC</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Spokane" />Spokane-Spokane Valley, WA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Springfield" />Springfield, MA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Springfield" />Springfield, MO</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="St. Cloud" />St. Cloud, MN</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Starkville" />Starkville, MS</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Stillwater" />Stillwater, OK</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Stockton" />Stockton-Lodi, CA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Summit Park" />Summit Park, UT</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Topeka" />Topeka, KS</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Torrington" />Torrington, CT</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Tucson" />Tucson, AZ</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Tulsa" />Tulsa, OK</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Utica" />Utica-Rome, NY</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Vallejo" />Vallejo-Fairfield, CA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Vineland" />Vineland-Bridgeton, NJ</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Waterloo" />Waterloo-Cedar Falls, IA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Wilmington" />Wilmington, NC</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Worcester" />Worcester, MA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Youngstown" />Youngstown-Warren-Boardman, OH-PA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Ames" />Ames, IA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Ann Arbor" />Ann Arbor, MI</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Athens" />Athens-Clarke County, GA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Auburn" />Auburn-Opelika, AL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Baton Rouge" />Baton Rouge, LA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Blacksburg" />Blacksburg-Christianburg-Radford, VA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Bloomington" />Bloomington, IL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Bloomington" />Bloomington, IN</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Bloomsburg" />Bloomsburg-Berwick, PA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Boulder" />Boulder, CO</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Burlington" />Burlington, NC</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Carbondale" />Carbondale-Marion, IL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Champaign-Urbana" />Champaign-Urbana, IL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Charlottesville" />Charlottesville, VA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Chico" />Chico, CA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="College Station" />College Station-Bryan, TX</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Columbia" />Columbia, MO</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Columbia" />Columbia, SC</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Corvallis" />Corvallis, OR</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Dayton" />Dayton, OH</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Eugene" />Eugene, OR</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Gainesville" />Gainesville, FL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Greensboro" />Greensboro-High Point, NC</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Greenville" />Greenville, NC</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Huntington" />Huntington-Ashland, WV-KY-OH</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Iowa City" />Iowa City, IA</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Ithaca" />Ithaca, NY</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Kalamazoo" />Kalamazoo-Portage, MI</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Kingston" />Kingston, NY</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Knoxville" />Knoxville, TN</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lansing" />Lansing-East Lansing, MI</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lawrence" />Lawrence, KS</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lexington" />Lexington-Fayette, KY</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lubbock" />Lubbock, TX</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Madison" />Madison, WI</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Manhattan" />Manhattan, KS</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Morgantown" />Morgantown, WV</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Mount Pleasant" />Mount Pleasant, MI</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Muncie" />Muncie, IN</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Provo-Orem" />Provo-Orem, UT</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="South Bend" />South Bend-Mishawaka, IN-MI</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Tallahassee" />Tallahassee, FL</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Toledo" />Toledo, OH</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="Winston-Salem" />Winston-Salem, NC</label><br />
-                    <label><input type="checkbox" class="sChild" name="cbsaChild" value="College" />College</label><br />
-                </div>
-                </p>
-        <script src="js/jquery-3.3.1.js"></script>
-        <script src="js/cbsaScripts.js"></script>
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Akron" />Akron, OH</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Amsterdam" />Amsterdam, NY</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Anchorage" />Anchorage, AK</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Asheville" />Asheville, NC</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Atlantic City" />Atlantic City-Hammonton, NJ</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Batavia" />Batavia, NY</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Binghamton" />Binghamton, NY</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Birmingham" />Birmingham-Hoover, AL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Boise City" />Boise City, ID</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Burlington" />Burlington-South Burlington, VT</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Cape Coral" />Cape Coral-Fort Myers, FL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Mattoon" />Charleston-Mattoon, IL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="North Charleston" />Charleston-North Charleston, SC</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Chattanooga" />Chattanooga, TN-GA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Colorado Springs" />Colorado Springs, CO</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Concord" />Concord, NH</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Corpus Christi" />Corpus Christi, TX</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Cortland" />Cortland, NY</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Crestview" />Crestview-Fort Walton Beach-Destin, FL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Davenport" />Davenport-Moline-Rock Island, IA-IL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Deltona" />Deltona-Daytona Beach-Ormond Beach, FL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Des Moines" />Des Moines-West Des Moines, IA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Duluth" />Duluth, MN-WI</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Eau Claire" />Eau Claire, WI</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="El Paso" />El Paso, TX</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Elmira" />Elmira, NY</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Fargo" />Fargo, ND-MN</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Fayetteville" />Fayetteville, NC</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Flagstaff" />Flagstaff, AZ</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Fond du Lac" />Fond du Lac, WI</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Fort Collins" />Fort Collins, CO</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Fresno" />Fresno, CA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Gainesville" />Gainsville, GA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Glens Falls" />Glens Falls, NY</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Grand Rapids" />Grand Rapids-Wyoming, MI</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Greeley" />Greeley, CO</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Greenville" />Greenville-Anderson-Mauldin, SC</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Harrisburg" />Harrisburg-Carlisle, PA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Harrisonburg" />Harrisonburg, VA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Hudson" />Hudson, NY</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Huntsville" />Huntsville, AL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Indiana" />Indiana, PA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Jacksonville" />Jacksonville, NC</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Kankakee" />Kankakee, IL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Keene" />Keene, NH</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Killeen" />Killeen-Temple, TX</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lafayette" />Lafayette-West Lafayette, IN</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lakeland" />Lakeland-Winter Haven, FL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lancaster" />Lancaster, PA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lincoln" />Lincoln, NE</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Louisville" />Louisville-Jefferson County, KY-IN</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Manchester" />Manchester-Nashua, NH</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Modesto" />Modesto, CA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Montgomery" />Montgomery, AL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Myrtle Beach" />Myrtle Beach-Conway-North Myrtle Beach, SC-NC</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Napa" />Napa, CA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Naples" />Naples-Immokalee-Marco Island, FL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="North Port" />North Port-Sarasota-Bradenton, FL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Norwich" />Norwich-New London, CT</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Ocala" />Ocala, FL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Ocean City" />Ocean City, NJ</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Ogden" />Ogden-Clearfield, UT</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Oklahoma City" />Oklahoma City, OK</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Olympia" />Olympia-Tumwater, WA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Omaha" />Omaha-Council Bluffs, NE-IA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Oshkosh" />Oshkosh-Neenah, WI</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Oxnard" />Oxnard-Thousand Oaks-Ventura, CA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Palm Bay" />Palm Bay-Melbourne-Titusville, FL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Panama City" />Panama City, FL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Pensacola" />Pensacola-Ferry Pass-Brent, FL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Peoria" />Fayetteville, NC</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Port St. Lucie" />Peoria, IL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Portland" />Portland-South Portland, ME</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Reno" />Reno, NV</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Rochelle" />Rochelle, IL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Rockford" />Rockford, IL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Salisbury" />Salisbury, MD-DE</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Santa Cruz" />Santa Cruz-Watsonville, CA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Santa Rosa" />Santa Rosa, CA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Savannah" />Savannah, GA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Scranton" />Scranton-Wilkes-Barre-Hazleton, PA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Sheboygan" />Sheboygan, WI</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Sioux Falls" />Sioux Falls, SD</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Spartanburg" />Spartanburg, SC</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Spokane" />Spokane-Spokane Valley, WA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Springfield" />Springfield, MA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Springfield" />Springfield, MO</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="St. Cloud" />St. Cloud, MN</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Starkville" />Starkville, MS</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Stillwater" />Stillwater, OK</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Stockton" />Stockton-Lodi, CA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Summit Park" />Summit Park, UT</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Topeka" />Topeka, KS</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Torrington" />Torrington, CT</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Tucson" />Tucson, AZ</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Tulsa" />Tulsa, OK</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Utica" />Utica-Rome, NY</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Vallejo" />Vallejo-Fairfield, CA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Vineland" />Vineland-Bridgeton, NJ</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Waterloo" />Waterloo-Cedar Falls, IA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Wilmington" />Wilmington, NC</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Worcester" />Worcester, MA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Youngstown" />Youngstown-Warren-Boardman, OH-PA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Ames" />Ames, IA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Ann Arbor" />Ann Arbor, MI</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Athens" />Athens-Clarke County, GA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Auburn" />Auburn-Opelika, AL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Baton Rouge" />Baton Rouge, LA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Blacksburg" />Blacksburg-Christianburg-Radford, VA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Bloomington" />Bloomington, IL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Bloomington" />Bloomington, IN</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Bloomsburg" />Bloomsburg-Berwick, PA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Boulder" />Boulder, CO</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Burlington" />Burlington, NC</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Carbondale" />Carbondale-Marion, IL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Champaign-Urbana" />Champaign-Urbana, IL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Charlottesville" />Charlottesville, VA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Chico" />Chico, CA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="College Station" />College Station-Bryan, TX</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Columbia" />Columbia, MO</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Columbia" />Columbia, SC</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Corvallis" />Corvallis, OR</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Dayton" />Dayton, OH</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Eugene" />Eugene, OR</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Gainesville" />Gainesville, FL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Greensboro" />Greensboro-High Point, NC</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Greenville" />Greenville, NC</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Huntington" />Huntington-Ashland, WV-KY-OH</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Iowa City" />Iowa City, IA</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Ithaca" />Ithaca, NY</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Kalamazoo" />Kalamazoo-Portage, MI</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Kingston" />Kingston, NY</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Knoxville" />Knoxville, TN</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lansing" />Lansing-East Lansing, MI</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lawrence" />Lawrence, KS</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lexington" />Lexington-Fayette, KY</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Lubbock" />Lubbock, TX</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Madison" />Madison, WI</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Manhattan" />Manhattan, KS</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Morgantown" />Morgantown, WV</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Mount Pleasant" />Mount Pleasant, MI</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Muncie" />Muncie, IN</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Provo-Orem" />Provo-Orem, UT</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="South Bend" />South Bend-Mishawaka, IN-MI</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Tallahassee" />Tallahassee, FL</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Toledo" />Toledo, OH</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="Winston-Salem" />Winston-Salem, NC</label><br />
+                <label><input type="checkbox" class="sChild" name="cbsaChild" value="College" />College</label><br />
+            </div>
+            </p>
+        </div>
+    </div>   
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/cbsaScripts.js"></script>
     </body>
 </html>

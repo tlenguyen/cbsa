@@ -1,0 +1,33 @@
+body {
+    background-color: lightgrey;
+    font-family: 'Oswald', sans-serif;
+}
+
+textarea {
+    height:200px;
+    width:1000px;
+}
+
+button {
+    height:90px;
+    width:300px;
+    border-radius:8px;
+    padding:10px;
+    font-size:20px;
+    font-family: 'Oswald', sans-serif;
+    height:52px;
+    cursor:pointer;
+    background-color:wheat;
+}
+
+.column {
+    float: left;
+    width: 22.5%;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
