@@ -1,81 +1,81 @@
 /* eslint-env jquery */
 
-$(".mSelectAll").click(function() {
+$(".mSelectAll").click(function(){
 	var a = $("input[type='checkbox'].mChild");
-	if($(this).is(":checked")) {
+	if($(this).is(":checked")){
 		a.prop("checked", true);
 	}
-	else {
+	else{
 		a.prop("checked", false);
 	}
 });
 
-$("input[type='checkbox'].mChild").change(function() {
+$("input[type='checkbox'].mChild").change(function(){
 	var a = $("input[type='checkbox'].mChild");
-	if(a.length == a.filter(":checked").length) {
+	if(a.length == a.filter(":checked").length){
 		$(".mSelectAll").prop("checked", true);
 	}
-	else {
+	else{
 		$(".mSelectAll").prop("checked", false);
 	}
 });
 
-$(".rSelectAll").click(function() {
+$(".rSelectAll").click(function(){
 	var a = $("input[type='checkbox'].rChild");
-	if($(this).is(":checked")) {
+	if($(this).is(":checked")){
 		a.prop("checked", true);
 	}
-	else {
+	else{
 		a.prop("checked", false);
 	}
 });
 
-$("input[type='checkbox'].rChild").change(function() {
+$("input[type='checkbox'].rChild").change(function(){
 	var a = $("input[type='checkbox'].rChild");
-	if(a.length == a.filter(":checked").length) {
+	if(a.length == a.filter(":checked").length){
 		$(".rSelectAll").prop("checked", true);
 	}
-	else {
+	else{
 		$(".rSelectAll").prop("checked", false);
 	}
 });
 
-$(".pSelectAll").click(function() {
+$(".pSelectAll").click(function(){
 	var a = $("input[type='checkbox'].pChild");
-	if($(this).is(":checked")) {
+	if($(this).is(":checked")){
 		a.prop("checked", true);
 	}
-	else {
+	else{
 		a.prop("checked", false);
 	}
 });
 
-$("input[type='checkbox'].pChild").change(function() {
+$("input[type='checkbox'].pChild").change(function(){
 	var a = $("input[type='checkbox'].pChild");
-	if(a.length == a.filter(":checked").length) {
+	if(a.length == a.filter(":checked").length){
 		$(".pSelectAll").prop("checked", true);
 	}
-	else {
+	else{
 		$(".pSelectAll").prop("checked", false);
 	}
 });
 
-$(".sSelectAll").click(function() {
+$(".sSelectAll").click(function(){
 	var a = $("input[type='checkbox'].sChild");
-	if($(this).is(":checked")) {
+	if($(this).is(":checked")){
 		a.prop("checked", true);
 	}
-	else {
+	else{
 		a.prop("checked", false);
 	}
 });
 
-$("input[type='checkbox'].sChild").change(function() {
+$("input[type='checkbox'].sChild").change(function(){
 	var a = $("input[type='checkbox'].sChild");
-	if(a.length == a.filter(":checked").length) {
+	if(a.length == a.filter(":checked").length){
 		$(".sSelectAll").prop("checked", true);
 	}
-	else {
+	else{
 		$(".sSelectAll").prop("checked", false);
 	}
 });
@@ -84,14 +84,14 @@ $(document).ready(function(){
 	var a = $("input[name='master']");
 	var b = $("input[name='cbsaChild']");
 
-	a.on("change", function() {
+	a.on("change", function(){
 		var string = b.filter(":checked").map(function(){
 			return this.value;
 		}).get().join("|");
 		$("#output").val(string);
 	});
     
-	b.on("change", function() {
+	b.on("change", function(){
 		var string = b.filter(":checked").map(function(){
 			return this.value;
 		}).get().join("|");
@@ -99,7 +99,7 @@ $(document).ready(function(){
 	});
 });
 
-$("button").click(function() {
+$("button").click(function(){
 	$("textarea").select();
 	document.execCommand("copy");
 });
