@@ -99,7 +99,19 @@ $(document).ready(function(){
 	});
 });
 
-$("button").click(function(){
+var b1 = $("#btn1");
+var b2 = $("#btn2");
+
+var copyValues = function(){
 	$("textarea").select();
 	document.execCommand("copy");
-});
+};
+
+var resetAll = function(){
+	document.getElementById("output").value = "";
+	var a = $("input[type='checkbox']");
+	a.prop("checked", false);
+};
+
+b1.on("click", copyValues);
+b2.on("click", resetAll);
